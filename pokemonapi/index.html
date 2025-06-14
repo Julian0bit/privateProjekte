@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="uiBox">
+        <input type="text" id="pokemonName" placeholder="Enter Pokemon or Id">
+        <button id="submitBtn" onclick="fetchData()">Fetch Pokemon</button>
+        <div id="mainLayout">
+            <div id="leftSprites">
+                <div class="imgArea">
+                    <img src="" alt="Pokemon Sprite" id="pokemonSprite" class="pkmImages" style="display: none">
+                </div>
+                <div id="shinyArea" class="imgArea">
+                    <img src="" alt="Pokemon Sprite" id="shinyPokemonSprite" class="pkmImages" style="display: none">
+                </div>
+            </div>
+            <div id="stats" class="imgArea">
+                <p id="pkmName" class="paragraphs">Name: </p><br>
+                <p id="pkmType" class="paragraphs">Types: </p><br>
+                <p id="pkmId" class="paragraphs">Id: </p><br>
+                <div id="IdContainer">
+                    <button class="idBtn" id="prevBtn"><</button>
+                    <button class="idBtn" id="nextBtn">></button>
+                </div>
+            </div>
+        </div>
+        <div id="baseStats">
+            <table>
+                <tr>
+                    <th>Hp</th>
+                    <th>Attack</th>
+                    <th>Defense</th>
+                    <th>Special-Attack</th>
+                    <th>Special-Defense</th>
+                    <th>Speed</th>
+                </tr>
+                <tr>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
